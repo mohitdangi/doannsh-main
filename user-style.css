@@ -8,8 +8,9 @@ body {
 
 .container {
   background: #fff;
-  width: 600px;
-  height: 550px;
+  width: 100%;
+  /* height: 550px; */
+  height: 600px;
   margin: 0 auto;
   position: relative;
   margin-top: 5%;
@@ -56,11 +57,11 @@ body {
 
 .leftbox {
   float: left;
-  top: -5%;
+  /* top: 5%; */
   left: 5%;
   position: absolute;
-  width: 15%;
-  height: 110%;
+  width: 10%;
+  height: 100%;
   background: #b7e4c7;
   box-shadow: 3px 3px 10px rgba(119, 119, 119, 0.5);
 }
@@ -70,6 +71,7 @@ body {
 .nav-profile a {
   list-style: none;
   padding: 35px;
+  padding-left: 60px;
   color: #fff;
   font-size: 1.3em;
   display: block;
@@ -92,7 +94,7 @@ body {
 
 .rightbox {
   float: right;
-  width: 60%;
+  width: 77%;
   height: 100%;
 }
 
@@ -165,7 +167,7 @@ p {
     content: "My order";
     position: absolute;
     top: 50%;
-    left: -55px;
+    left: -35px;
     padding: 5px;
     white-space: nowrap;
     background-color: #3fb6a8;
@@ -192,7 +194,7 @@ p {
     content: "My profile";
     position: absolute;
     top: 50%;
-    left: -55px;
+    left: -35px;
     padding: 5px;
     white-space: nowrap;
     background-color: #3fb6a8;
@@ -207,18 +209,19 @@ p {
   .hover-text-user:hover::before {
     opacity: 1;
   }
+
+  
   @media (max-width: 480px) {
   .container{
-    width: 350px;
-  height: 650px;
+    width: 100%;
+    height: 650px;
   }
   .leftbox {
     float: left;
-    top: -5%;
     left: 5%;
     position: absolute;
     width: 25%;
-    height: 110%;
+    height: 100%;
     background: #b7e4c7;
     box-shadow: 3px 3px 10px rgba(119, 119, 119, 0.5);
   }
@@ -248,5 +251,8 @@ p {
 }
 .nav-profile{
   margin-top: 70px;
+}
+.nav-profile a{
+  margin-right: 100px;
 }
   }
