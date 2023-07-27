@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doaansh | Product Details</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="test.css">
+    
+    <link rel="stylesheet" href="gallery2.css">
+    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="sproduct.css">
+    <link rel="stylesheet" href="sproduct2.css">
+    <link rel="stylesheet" href="footer.css">
+
+    <link rel="stylesheet" href="searchbar.css">
+
+
+
+</head>
+
+<body>
+    <div class="top">
+        <a href="#top" class="back">
+            <img src="./icon/arrow.png" alt="" width="10px">
+        </a>
+    </div>
+
+    <!-- ==================== NAVBAR ================= -->
+
+    <nav class="navbar1">
+        <div class="navbar_container1">
+            <div class="hamburger" id="nav-toggle">
+                <a href="">
+                    <img src="./icon/bars-solid.svg" alt="" width="20px" height="20px">
+                </a>
+            </div>
+            <div class="nav-2">
+                <img src="./assets/doansh png.png" alt="">
+            </div>
+            <div class="nav-3">
+                <div class="search">
+                    <a href="" id="searchBtn"><i class="fas fa-search"></i></a>
+                    <div class="input_container">
+                        <div class="search_icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <input type="text" id="searchInput" placeholder="Search Products....">
+                    </div>
+                </div>
+
+
+                <div>
+                    <a href=""><i class="fas fa-heart"></i></a>
+                </div>
+
+
+                <div>
+                    <a href=""><i class="fas fa-user"></i></a>
+                </div>
+
+
+                <div>
+                    <a href=""><i class="fas fa-shopping-cart"></i></a>
+                </div>
+
+                <div>
+                    <a onclick="window.location.href='loginPage.html';" class="login-btn">Login</a>
+                </div>
+
+            </div>
+        </div>
+        <div class="nav-container">
+            <ul class="nav-ul">
+                <li><a onclick="window.location.href='index.html';">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li>
+                    <a href="">Category<img src="./icon/arrow.png" alt="" width="6px" class="icon"></a>
+                    <ul class="dropdown">
+                        <li><a onclick="window.location.href='tshirtPage.html';">T-shirt</a></li>
+                        <li><a onclick="window.location.href='mobileCover.html';" style="font-size: 16px;">Mobile Cover</a></li>
+                    </ul>
+                </li>
+                <li>
+                <a onclick="window.location.href='productPage.html';">Product</a>
+                </li>
+                <li><a href="">Sale</a></li>
+                <li><a href="">Top</a></li>
+                <li><a href="">Dresses</a></li>
+                <li>
+                    <!-- <a onclick="window.location.href='productPage.html';">Product</a> -->
+                    <!-- <img src="./icon/arrow.png" alt="" width="6px" class="icon"> -->
+                    <!-- <ul class="dropdown">
+                        <li><a href="">HTML</a></li>
+                        <li><a href="">css</a></li>
+                        <li><a href="">JS</a></li>
+                    </ul> -->
+                </li>
+                <li><a onclick="window.location.href='ourServices.html';">Services</a></li>
+                <li><a onclick="window.location.href='Trach-order.html';">Trach Order</a></li>
+                <li><a onclick="window.location.href='contactUs.html';">Contact Us</a></li>
+            </ul>
+        </div>
+
+    </nav>
+
+    <section id="prodetails">
+        <div class="single-pro-image">
+            <img src="./Assets1/product_07.jpg" width="100%" id="mainImg" alt="">
+
+            <div class="small-img-group">
+                <div class="small-img-col">
+                    <img src="./Assets1/product_07.jpg" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="./Assets1/product_01b.jpg" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="./Assets1/product_03.jpg" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="./Assets1/product_06.jpg" width="100%" class="small-img" alt="">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="single-pro-details">
+            <h4>Fashion T Shirt</h4>
+            <h2>₹499</h2>
+            <select>
+                <option>Select Size</option>
+                <option>Small</option>
+                <option>Medium</option>
+                <option>Large</option>
+                <option>XL</option>
+                <option>XLL</option>
+            </select>
+
+            <select id="mySelect">
+                <option value="yellow">Yellow</option>
+                <option value="white">White</option>
+                <option value="green">Green</option>
+                <option value="brown">Brown</option>
+            </select>
+
+            <input type="number" value="1">
+            <button class="normal"><a onclick="window.location.href='cart.html';" style="cursor: pointer;">Add To Cart</a></button>
+            <h4>Product Details</h4>
+            <span>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur odit nisi quo quaerat aut libero
+                quos, labore repellat unde non, perspiciatis dolorem incidunt distinctio. Cum perspiciatis doloremque
+                sit ducimus natus et nobis porro, labore architecto minus dolorum ullam, tenetur suscipit?
+            </span>
+        </div>
+
+    </section>
+
+
+    <section class="product">
+        <h2 class="product-category">best selling</h2>
+        <button class="pre-btn"><img src="./icon/arrow.png" alt=""></button>
+        <button class="nxt-btn"><img src="./icon/arrow.png" alt=""></button>
+        <div class="product-container">
+            <div class="product-card" onclick="window.location.href='sproduct.html';">
+                <div class="product-image">
+
+                    <img src="./Assets1/product_01.jpg" class="product-thumb" alt="">
+
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">brand</h2>
+                    <p class="product-short-description">a short line about the cloth..</p>
+                    <span class="price">₹201</span>
+                    <a href=""
+                        style="margin-left: 5rem; background-color: whitesmoke;  border-radius: 50px;"
+                        onclick="window.location.href='sproduct.html';">
+                        <i class="fas fa-shopping-cart" style="font-size: 1rem; padding: 10px;"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="product-card" onclick="window.location.href='sproduct.html';">
+                <div class="product-image">
+
+                    <img src="./Assets1/product_02.jpg" class="product-thumb" alt="">
+
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">brand</h2>
+                    <p class="product-short-description">a short line about the cloth..</p>
+                    <span class="price">₹320</span>
+                    <a href=""
+                        style="margin-left: 5rem; background-color: whitesmoke; width: 80px; height: 80px; border-radius: 50px;">
+                        <!-- <img src="./icon/cart-shopping-solid.svg" alt="" width="20px" height="20px"> -->
+                        <i class="fas fa-shopping-cart" style="color: black; font-size: 1rem; padding: 10px;"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="product-card" onclick="window.location.href='sproduct.html';">
+                <div class="product-image">
+
+                    <img src="./Assets1/product_03.jpg" class="product-thumb" alt="">
+
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">brand</h2>
+                    <p class="product-short-description">a short line about the cloth..</p>
+                    <span class="price">₹210</span>
+                    <a href=""
+                        style="margin-left: 5rem; background-color: whitesmoke; width: 80px; height: 80px; border-radius: 50px;">
+                        <!-- <img src="./icon/cart-shopping-solid.svg" alt="" width="20px" height="20px"> -->
+                        <i class="fas fa-shopping-cart" style="color: black; font-size: 1rem; padding: 10px;"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="product-card" onclick="window.location.href='sproduct.html';">
+                <div class="product-image">
+
+                    <img src="./Assets1/product_04.jpg" class="product-thumb" alt="">
+
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">brand</h2>
+                    <p class="product-short-description">a short line about the cloth..</p>
+                    <span class="price">₹209</span>
+                    <a href=""
+                        style="margin-left: 5rem; background-color: whitesmoke; width: 80px; height: 80px; border-radius: 50px;">
+                        <!-- <img src="./icon/cart-shopping-solid.svg" alt="" width="20px" height="20px"> -->
+                        <i class="fas fa-shopping-cart" style="color: black; font-size: 1rem; padding: 10px;"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="product-card" onclick="window.location.href='sproduct.html';">
+                <div class="product-image">
+
+                    <img src="./Assets1/product_05.jpg" class="product-thumb" alt="">
+
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">brand</h2>
+                    <p class="product-short-description">a short line about the cloth..</p>
+                    <span class="price">₹199</span>
+                    <a href=""
+                        style="margin-left: 5rem; background-color: whitesmoke; width: 80px; height: 80px; border-radius: 50px;">
+                        <!-- <img src="./icon/cart-shopping-solid.svg" alt="" width="20px" height="20px"> -->
+                        <i class="fas fa-shopping-cart" style="color: black; font-size: 1rem; padding: 10px;"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="product-card" onclick="window.location.href='sproduct.html';">
+                <div class="product-image">
+
+                    <img src="./Assets1/product_06.jpg" class="product-thumb" alt="">
+
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">brand</h2>
+                    <p class="product-short-description">a short line about the cloth..</p>
+                    <span class="price">₹320</span>
+                    <a href=""
+                        style="margin-left: 5rem; background-color: whitesmoke; width: 80px; height: 80px; border-radius: 50px;">
+                        <!-- <img src="./icon/cart-shopping-solid.svg" alt="" width="20px" height="20px"> -->
+                        <i class="fas fa-shopping-cart" style="color: black; font-size: 1rem; padding: 10px;"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="product-card" onclick="window.location.href='sproduct.html';">
+                <div class="product-image">
+
+                    <img src="./Assets1/product_07.jpg" class="product-thumb" alt="">
+
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">brand</h2>
+                    <p class="product-short-description">a short line about the cloth..</p>
+                    <span class="price">₹280</span>
+                    <a href=""
+                        style="margin-left: 5rem; background-color: whitesmoke; width: 80px; height: 80px; border-radius: 50px;">
+                        <!-- <img src="./icon/cart-shopping-solid.svg" alt="" width="20px" height="20px"> -->
+                        <i class="fas fa-shopping-cart" style="color: black; font-size: 1rem; padding: 10px;"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="product-card" onclick="window.location.href='sproduct.html';">
+                <div class="product-image">
+
+                    <img src="./Assets1/product_08.jpg" class="product-thumb" alt="">
+
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">brand</h2>
+                    <p class="product-short-description">a short lidfadne about the cloth..</p>
+                    <span class="price">₹190</span>
+                    <a href=""
+                        style="margin-left: 5rem; background-color: whitesmoke; width: 80px; height: 80px; border-radius: 50px;">
+                        <i class="fas fa-shopping-cart" style="color: black; font-size: 1rem; padding: 10px;"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="product-card" onclick="window.location.href='sproduct.html';">
+                <div class="product-image">
+
+                    <img src="./Assets1/product_06b.jpg" class="product-thumb" alt="">
+
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">brand</h2>
+                    <p class="product-short-description">a short line about the cloth..</p>
+                    <span class="price">₹120</span>
+                    <a href=""
+                        style="margin-left: 5rem; background-color: whitesmoke; width: 80px; height: 80px; border-radius: 50px;">
+                        <!-- <img src="./icon/cart-shopping-solid.svg" alt="" width="20px" height="20px"> -->
+                        <i class="fas fa-shopping-cart" style="color: black; font-size: 1rem; padding: 10px;"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="product-card" onclick="window.location.href='sproduct.html';">
+                <div class="product-image">
+
+                    <img src="./Assets1/product_01.jpg" class="product-thumb" alt="">
+
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">brand</h2>
+                    <p class="product-short-description">a short line about the cloth..</p>
+                    <span class="price">₹320</span>
+                    <a href=""
+                        style="margin-left: 5rem; background-color: whitesmoke; width: 80px; height: 80px; border-radius: 50px;">
+                        <!-- <img src="./icon/cart-shopping-solid.svg" alt="" width="20px" height="20px"> -->
+                        <i class="fas fa-shopping-cart" style="color: black; font-size: 1rem; padding: 10px;"></i>
+                    </a>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-up-section">
+                <div class="footer-img-div">
+                    <img src="./assets/doansh png.png" alt="">
+                </div>
+                <div>
+                    <ul class="footer-icons">
+                        <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                        <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                        <li><a href=""><i class="fab fa-whatsapp"></i></a></li>
+                        <li><a href=""><i class="fab fa-pinterest"></i></a></li>
+                        <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-down-section">
+                <div class="footer-1">
+                    <h5 class="widget-title">Company</h5>
+                    <div class="textwidget">
+                        <ul class="menu">
+                            <li>
+                                <a href="">Who we are</a>
+                            </li>
+                            <li>
+                                <a href="#">Privacy Policy </a>
+                            </li>
+                            <li>
+                                <a href="#">Terms &amp;Conditions</a>
+                            </li>
+                            <li>
+                                <a href="#">FAQ</a>
+                            </li>
+                    </div>
+                </div>
+                <div class="footer-2">
+                    <h5 class="widget-title">Service</h5>
+                    <div class="textwidget">
+                        <ul class="menu">
+                            <li>
+                                <a href="#">Contact Us</a>
+                            </li>
+                            <li>
+                                <a href="#">Track Order</a>
+                            </li>
+                            <li>
+                                <a href="#">Return Policy</a>
+                            </li>
+                            <li>
+                                <a href="#">Exchange Policy</a>
+                            </li>
+                            <li>
+                                <a href="#"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-3">
+                    <h5 class="widget-title">Links</h5>
+                    <div class="textwidget">
+                        <ul class="menu">
+                            <li>
+                                <a href="#">New Arrival</a>
+                            </li>
+                            <li>
+                                <a href="#">Size Guide</a>
+                            </li>
+                            <li>
+                                <a href="#">Latest News</a>
+                            </li>
+                            <li>
+                                <a href="#">Our Sitemap</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-4">
+                    <h5 class="widget-title">Social Links</h5>
+                    <div class="textwidget">
+                        <ul class="menu">
+                            <li>
+                                <a href="#">Facebook</a>
+                            </li>
+                            <li>
+                                <a href="#">Instagram</a>
+                            </li>
+                            <li>
+                                <a href="#">Whatsapp</a>
+                            </li>
+                            <li>
+                                <a href="#">LinkedIn</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-5">
+                    <h5 class="widget-title">About The Store</h5>
+                    <div class="textwidget">
+                        <p>Doaansh is an online fashion store. Buy clothes and other accessories here online for
+                            men and women. Choose from a wide range of original quirky designs. Free delivery,
+                            Easy Return, Shop Now !!</p>
+                        <div class="mobile">
+                            <i class="fas fa-mobile"></i>
+                            Phone &amp Whatsapp: (+91) 90000 00000<br>
+                        </div>
+                        <br>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright-section">
+                <p>
+                    &copy;2023 <a href="">Doaansh</a>
+                    . All rights reserved | Powered by <a href="">ActConnect</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        let mainImg = document.getElementById("mainImg");
+
+        let smallImg = document.getElementsByClassName("small-img");
+
+        var selectElement = document.getElementById("mySelect");
+
+        smallImg[0].onclick = () => {
+            mainImg.src = smallImg[0].src;
+        }
+
+        smallImg[1].onclick = () => {
+            mainImg.src = smallImg[1].src;
+        }
+
+        smallImg[2].onclick = () => {
+            mainImg.src = smallImg[2].src;
+        }
+
+        smallImg[3].onclick = () => {
+            mainImg.src = smallImg[3].src;
+        }
+
+        selectElement.addEventListener('change', function () {
+            const selectedOption = selectElement.value;
+
+            if (selectedOption === 'yellow') {
+                mainImg.src = "./Assets1/product_07.jpg"
+            }
+            if (selectedOption === 'white') {
+                mainImg.src = "./Assets1/product_01b.jpg"
+            }
+            if (selectedOption === 'green') {
+                mainImg.src = "./Assets1/product_03.jpg"
+            }
+            if (selectedOption === 'brown') {
+                mainImg.src = "./Assets1/product_06.jpg"
+            }
+        });
+    </script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

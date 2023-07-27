@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="test.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="searchbar.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <style>
+      body{
+        background-color: whitesmoke;
+      }
+      .newbtn {
+        /* background-color: #14AD64; */
+        border: #87CBB9 solid 2px;
+        font-weight: 700;
+        padding-top: 12px;
+        background-color:#87CBB9;
+        color: white;
+        text-decoration: none;
+      }
+      .header-color{
+        background-color: #87CBB9;
+      }
+
+      .newbtn:hover {
+        background-color: #659e8c;
+        color: white;
+      }
+
+      .pt45 {
+        padding-top: 45px;
+      }
+
+      .order-tracking {
+        text-align: center;
+        width: 33.33%;
+        position: relative;
+        display: block;
+      }
+
+      .order-tracking .is-complete {
+        display: block;
+        position: relative;
+        border-radius: 50%;
+        height: 30px;
+        width: 30px;
+        border: 0px solid #14ad64;
+        background-color: #f7be16;
+        margin: 0 auto;
+        transition: background 0.25s linear;
+        -webkit-transition: background 0.25s linear;
+        z-index: 2;
+      }
+
+      .order-tracking .is-complete:after {
+        display: block;
+        position: absolute;
+        content: "";
+        height: 14px;
+        width: 7px;
+        top: -2px;
+        bottom: 0;
+        left: 5px;
+        margin: auto 0;
+        border: 0px solid #14ad64;
+        border-width: 0px 2px 2px 0;
+        transform: rotate(45deg);
+        opacity: 0;
+      }
+
+      .order-tracking.completed .is-complete {
+        border-color: #27aa80;
+        border-width: 0px;
+        background-color: #14ad64;
+      }
+
+      .order-tracking.completed .is-complete:after {
+        border-color: #fff;
+        border-width: 0px 3px 3px 0;
+        width: 7px;
+        left: 11px;
+        opacity: 1;
+      }
+
+      .order-tracking p {
+        color: #a4a4a4;
+        font-size: 16px;
+        margin-top: 8px;
+        margin-bottom: 0;
+        line-height: 20px;
+      }
+
+      .order-tracking p span {
+        font-size: 14px;
+      }
+
+      .order-tracking.completed p {
+        color: #000;
+      }
+
+      .order-tracking::before {
+        content: "";
+        display: block;
+        height: 3px;
+        width: calc(100% - 40px);
+        background-color: #f7be16;
+        top: 13px;
+        position: absolute;
+        left: calc(-50% + 20px);
+        z-index: 0;
+      }
+
+      .order-tracking:first-child:before {
+        display: none;
+      }
+
+      .order-tracking.completed:before {
+        background-color: #27aa80;
+      }
+
+      .img-adjust {
+        /* margin: 10px auto; */
+        height: 100px;
+        width: 100px;
+        overflow: hidden;
+      }
+
+      .img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+
+      .product-detail {
+        max-width: 300px;
+        width: 100%;
+      }
+
+      .tracking-detail {
+        max-width: 800px;
+        padding-top: 5px;
+        width: 100%;
+      }
+
+      .para {
+        margin-top: 8px;
+        margin-bottom: 0;
+        line-height: 20px;
+      }
+
+      .para1 {
+        color: #a4a4a4;
+        font-size: 14px;
+      }
+
+      .para2 {
+        font-size: 16px;
+        font-weight: bold;
+        color: #444;
+      }
+      .dropdown{
+        font-size: 1px;
+      }
+      
+    </style>
+     <nav class="navbar1">
+      <div class="navbar_container1">
+          <div class="hamburger" id="nav-toggle">
+              <a href="">
+                  <img src="./icon/bars-solid.svg" alt="" width="20px" height="20px">
+              </a>
+          </div>
+          <div class="nav-2">
+              <img src="./assets/doansh png.png" alt="">
+          </div>
+          <div class="nav-3">
+              <div class="search">
+                  <a href="" id="searchBtn"><i class="fas fa-search"></i></a>
+                  <div class="input_container">
+                      <div class="search_icon">
+                          <i class="fas fa-search"></i>
+                      </div>
+                      <input type="text" id="searchInput" placeholder="Search Products....">
+                  </div>
+              </div>
+
+
+              <div>
+                  <a href=""><i class="fas fa-heart"></i></a>
+              </div>
+
+
+              <div>
+                  <a href=""><i class="fas fa-user"></i></a>
+              </div>
+
+
+              <div>
+                  <a href=""><i class="fas fa-shopping-cart"></i></a>
+              </div>
+
+              <div>
+                  <a onclick="window.location.href='loginPage.html';" class="login-btn">Login</a>
+              </div>
+
+          </div>
+      </div>
+      <div class="nav-container">
+          <ul class="nav-ul">
+              <li><a onclick="window.location.href='index.html';">Home</a></li>
+              <li><a onclick="window.location.href='about.html';">About Us</a></li>
+              <li>
+                  <a href="">Category<img src="./icon/arrow.png" alt="" width="6px" class="icon"></a>
+                  <ul class="dropdown">
+                      <li><a onclick="window.location.href='tshirtPage.html';">T-shirt</a></li>
+                      <li><a onclick="window.location.href='mobileCover.html';" style="font-size: 16px;">Mobile Cover</a></li>
+                  </ul>
+              </li>
+              <li>
+              <a onclick="window.location.href='productPage.html';">Product</a>
+              </li>
+              <li><a href="">Sale</a></li>
+              <li><a href="">Top</a></li>
+              <li><a href="">Dresses</a></li>
+              <li>
+                  <!-- <a onclick="window.location.href='productPage.html';">Product</a> -->
+                  <!-- <img src="./icon/arrow.png" alt="" width="6px" class="icon"> -->
+                  <!-- <ul class="dropdown">
+                      <li><a href="">HTML</a></li>
+                      <li><a href="">css</a></li>
+                      <li><a href="">JS</a></li>
+                  </ul> -->
+              </li>
+              <li><a onclick="window.location.href='ourServices.html';">Services</a></li>
+              <li><a onclick="window.location.href='Trach-order.html';">Trach Order</a></li>
+              <li><a onclick="window.location.href='contactUs.html';">Contact Us</a></li>
+          </ul>
+      </div>
+
+  </nav>
+
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-xl-12 col-md-10">
+        <div class="card">
+          <div class="card-header d-flex text-center justify-content-around header-color">
+            <p class="text-white fs-4 pt-2">Pending</p>
+            <p class="text-white fs-4 pt-2">Completed</p>
+          </div>
+          <div class="card-body">
+            <div class="d-flex flex-wrap justify-content-around order-details">
+              <div class="para text-center p-2">
+                <p class="para1">
+                  <span class="label">Order ID</span><br /><span class="para2">#12345</span>
+                </p>
+              </div>
+              <div class="para text-center p-2">
+                <p class="para1">
+                  <span class="label">Purchased Date</span><br /><span class="para2">July 24, 2023</span>
+                </p>
+              </div>
+              <div class="para text-center p-2">
+                <p class="para1">
+                  <span class="label">Estimated Delivery</span><br /><span class="para2">July 30, 2023</span>
+                </p>
+              </div>
+              <div class="text-center my-3 p-2">
+                <a href="#" class="newbtn px-4 py-3">Manage Order</a>
+              </div>
+            </div>
+            
+            <div class="row justify-content-between py-4">
+              <div class="order-tracking completed text-center">
+                <span class="is-complete"></span>
+                <p>Ordered<br /><span>Mon, June 24</span></p>
+              </div>
+              <div class="order-tracking completed text-center">
+                <span class="is-complete"></span>
+                <p>Shipped<br /><span>Tue, June 25</span></p>
+              </div>
+              <div class="order-tracking text-center">
+                <span class="is-complete"></span>
+                <p>Delivered<br /><span>Fri, June 28</span></p>
+              </div>
+            </div>
+            <div class="row justify-content-center py-4">
+              <div class="d-flex flex-wrap justify-content-around product-detail text-center">
+                <div class="img-adjust mb-3">
+                  <img src="./Assets1/sub4.jpg" alt="Order" class="img img-fluid" />
+                </div>
+                <div class="para py-2">
+                  <p>Product Name</p>
+                  <p>Product Price</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="footer-container">
+        <div class="footer-up-section">
+            <div class="footer-img-div">
+                <img src="./assets/doansh png.png" alt="">
+            </div>
+            <div>
+                <ul class="footer-icons">
+                    <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fab fa-whatsapp"></i></a></li>
+                    <li><a href=""><i class="fab fa-pinterest"></i></a></li>
+                    <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-down-section">
+            <div class="footer-1">
+                <h5 class="widget-title">Company</h5>
+                <div class="textwidget">
+                    <ul class="menu">
+                        <li>
+                            <a href="">Who we are</a>
+                        </li>
+                        <li>
+                            <a href="#">Privacy Policy </a>
+                        </li>
+                        <li>
+                            <a href="#">Terms &amp;Conditions</a>
+                        </li>
+                        <li>
+                            <a href="#">FAQ</a>
+                        </li>
+                </div>
+            </div>
+            <div class="footer-2">
+                <h5 class="widget-title">Service</h5>
+                <div class="textwidget">
+                    <ul class="menu">
+                        <li>
+                            <a href="#">Contact Us</a>
+                        </li>
+                        <li>
+                            <a href="#">Track Order</a>
+                        </li>
+                        <li>
+                            <a href="#">Return Policy</a>
+                        </li>
+                        <li>
+                            <a href="#">Exchange Policy</a>
+                        </li>
+                        <li>
+                            <a href="#"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-3">
+                <h5 class="widget-title">Links</h5>
+                <div class="textwidget">
+                    <ul class="menu">
+                        <li>
+                            <a href="#">New Arrival</a>
+                        </li>
+                        <li>
+                            <a href="#">Size Guide</a>
+                        </li>
+                        <li>
+                            <a href="#">Latest News</a>
+                        </li>
+                        <li>
+                            <a href="#">Our Sitemap</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-4">
+                <h5 class="widget-title">Social Links</h5>
+                <div class="textwidget">
+                    <ul class="menu">
+                        <li>
+                            <a href="#">Facebook</a>
+                        </li>
+                        <li>
+                            <a href="#">Instagram</a>
+                        </li>
+                        <li>
+                            <a href="#">Whatsapp</a>
+                        </li>
+                        <li>
+                            <a href="#">LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-5">
+                <h5 class="widget-title">About The Store</h5>
+                <div class="textwidget">
+                    <p>Doaansh is an online fashion store. Buy clothes and other accessories here online for
+                        men and women. Choose from a wide range of original quirky designs. Free delivery,
+                        Easy Return, Shop Now !!</p>
+                    <div class="mobile">
+                        <i class="fas fa-mobile"></i>
+                        Phone &amp Whatsapp: (+91) 90000 00000<br>
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-section">
+            <p>
+                &copy;2023 <a href="">Doaansh</a>
+                . All rights reserved | Powered by <a href="">ActConnect</a>
+            </p>
+        </div>
+    </div>
+</footer>
+<script src="script.js"></script>
+  </body>
+</html>

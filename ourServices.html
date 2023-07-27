@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="test.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="searchbar.css">
+  </head>
+  <body>
+    <style>
+      body{
+        background-color: whitesmoke;
+      }
+      .new-btn {
+        color: fff;
+        background-color: #87cbb9;
+        border-color: #87cbb9;
+      }
+      .card {
+        cursor: pointer;
+      }
+      .hd {
+        font-size: 30px;
+        font-weight: 550;
+      }
+      .card.hover,
+      .card:hover {
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+      }
+      .img {
+        margin-bottom: 35px;
+        -webkit-filter: drop-shadow(5px 5px 5px #222);
+        filter: drop-shadow(5px 5px 5px #222);
+      }
+      .card-title {
+        font-weight: 600;
+      }
+      button.focus,
+      button:focus {
+        outline: 0;
+        box-shadow: none !important;
+      }
+      .ft {
+        margin-top: 25px;
+      }
+      .chk {
+        margin-bottom: 5px;
+      }
+      .rck {
+        margin-top: 20px;
+        padding-bottom: 15px;
+      }
+      .text-color{
+       color: #87CBB9;
+       font-size: 24px;
+      }
+      .btn-primary {
+    background-color: #87CBB9; 
+    border-color: #87CBB9;
+
+  }
+
+
+  .btn-primary:hover {
+    background-color: #659e8c; 
+    border: none;
+  }
+    </style>
+      <nav class="navbar1">
+        <div class="navbar_container1">
+            <div class="hamburger" id="nav-toggle">
+                <a href="">
+                    <img src="./icon/bars-solid.svg" alt="" width="20px" height="20px">
+                </a>
+            </div>
+            <div class="nav-2">
+                <img src="./assets/doansh png.png" alt="">
+            </div>
+            <div class="nav-3">
+                <div class="search">
+                    <a href="" id="searchBtn"><i class="fas fa-search"></i></a>
+                    <div class="input_container">
+                        <div class="search_icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <input type="text" id="searchInput" placeholder="Search Products....">
+                    </div>
+                </div>
+
+
+                <div>
+                    <a href=""><i class="fas fa-heart"></i></a>
+                </div>
+
+
+                <div>
+                    <a href=""><i class="fas fa-user"></i></a>
+                </div>
+
+
+                <div>
+                    <a href=""><i class="fas fa-shopping-cart"></i></a>
+                </div>
+
+                <div>
+                    <a onclick="window.location.href='loginPage.html';" class="login-btn">Login</a>
+                </div>
+
+            </div>
+        </div>
+        <div class="nav-container">
+            <ul class="nav-ul">
+                <li><a onclick="window.location.href='index.html';">Home</a></li>
+                <li><a onclick="window.location.href='about.html';">About Us</a></li>
+                <li>
+                    <a href="">Category<img src="./icon/arrow.png" alt="" width="6px" class="icon"></a>
+                    <ul class="dropdown">
+                        <li><a onclick="window.location.href='tshirtPage.html';">T-shirt</a></li>
+                        <li><a onclick="window.location.href='mobileCover.html';" style="font-size: 16px;">Mobile Cover</a></li>
+                    </ul>
+                </li>
+                <li>
+                <a onclick="window.location.href='productPage.html';">Product</a>
+                </li>
+                <li><a href="">Sale</a></li>
+                <li><a href="">Top</a></li>
+                <li><a href="">Dresses</a></li>
+                <li>
+                    <!-- <a onclick="window.location.href='productPage.html';">Product</a> -->
+                    <!-- <img src="./icon/arrow.png" alt="" width="6px" class="icon"> -->
+                    <!-- <ul class="dropdown">
+                        <li><a href="">HTML</a></li>
+                        <li><a href="">css</a></li>
+                        <li><a href="">JS</a></li>
+                    </ul> -->
+                </li>
+                <li><a onclick="window.location.href='ourServices.html';">Services</a></li>
+                <li><a onclick="window.location.href='Trach-order.html';">Trach Order</a></li>
+                <li><a onclick="window.location.href='contactUs.html';">Contact Us</a></li>
+            </ul>
+        </div>
+
+    </nav>
+    <div
+      class="container-fluid mx-auto mt-5 mb-5 col-12"
+      style="text-align: center"
+    >
+      <div class="hd text-color mt-0 ">SERVICES THAT DOANNSH PROVIDE</div>
+      <p>
+        <small class="text-muted"
+          >Always render more and better service than <br />is expected of you,
+          no matter what your ask may be.</small
+        >
+      </p>
+      <div class="row" style="justify-content: center">
+        <div class="card col-md-3 col-12 mx-2">
+          <div class="card-content">
+            <div class="card-body">
+              <img
+                class="img  img-fluid"
+                src="https://trainingindustry.com/content/uploads/2021/07/8.10.21_Content_Dev_1182967367-1920x1080.jpg"
+                width="300"
+                height="150"
+              />
+              <div class="shadow"></div>
+              <div class="card-title text-color">Seller Training</div>
+              <div class="card-subtitle">
+                <p>
+                  <small class="text-muted"
+                    >In publishing and graphic design, Lorem ipsum is a
+                    placeholder text commonly used to demonstrate the visual
+                    form of a document or a typeface without relying on
+                    meaningful content. Lorem ipsum may be used as a placeholder
+                    before final copy is available</small
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card col-md-3 col-12 ml-2 mx-2">
+          <div class="card-content">
+            <div class="card-body">
+              <img
+                class="img  img-fluid"
+                src="https://emeritus.org/wp-content/uploads/2023/05/Featured-Images-May-5.png"
+                  width="300"
+                height="150"
+              />
+              <div class="card-title text-color">Cataloging</div>
+              <div class="card-subtitle">
+                <p>
+                  <small class="text-muted">
+                    In publishing and graphic design, Lorem ipsum is a
+                    placeholder text commonly used to demonstrate the visual
+                    form of a document or a typeface without relying on
+                    meaningful content. Lorem ipsum may be used as a placeholder
+                    before final copy is available
+                  </small>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card col-md-3 col-12 ml-2 mx-2">
+          <div class="card-content">
+            <div class="card-body">
+              <img
+                class="img rck  img-fluid"
+                src="https://emeritus.org/wp-content/uploads/2023/05/Featured-Images-May-5.png"
+                width="300"
+                height="150"
+              />
+              <div class="card-title text-color">We Guide you</div>
+              <div class="card-subtitle">
+                <p>
+                  <small class="text-muted"
+                    >In publishing and graphic design, Lorem ipsum is a
+                    placeholder text commonly used to demonstrate the visual
+                    form of a document or a typeface without relying on
+                    meaningful content. Lorem ipsum may be used as a placeholder
+                    before final copy is available.</small
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ft">
+        <div class="btn btn-primary new-btn">Registration</div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer-container">
+          <div class="footer-up-section">
+              <div class="footer-img-div">
+                  <img src="./assets/doansh png.png" alt="">
+              </div>
+              <div>
+                  <ul class="footer-icons">
+                      <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                      <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                      <li><a href=""><i class="fab fa-whatsapp"></i></a></li>
+                      <li><a href=""><i class="fab fa-pinterest"></i></a></li>
+                      <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                  </ul>
+              </div>
+          </div>
+          <div class="footer-down-section">
+              <div class="footer-1">
+                  <h5 class="widget-title">Company</h5>
+                  <div class="textwidget">
+                      <ul class="menu">
+                          <li>
+                              <a href="">Who we are</a>
+                          </li>
+                          <li>
+                              <a href="#">Privacy Policy </a>
+                          </li>
+                          <li>
+                              <a href="#">Terms &amp;Conditions</a>
+                          </li>
+                          <li>
+                              <a href="#">FAQ</a>
+                          </li>
+                  </div>
+              </div>
+              <div class="footer-2">
+                  <h5 class="widget-title">Service</h5>
+                  <div class="textwidget">
+                      <ul class="menu">
+                          <li>
+                              <a href="#">Contact Us</a>
+                          </li>
+                          <li>
+                              <a href="#">Track Order</a>
+                          </li>
+                          <li>
+                              <a href="#">Return Policy</a>
+                          </li>
+                          <li>
+                              <a href="#">Exchange Policy</a>
+                          </li>
+                          <li>
+                              <a href="#"></a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="footer-3">
+                  <h5 class="widget-title">Links</h5>
+                  <div class="textwidget">
+                      <ul class="menu">
+                          <li>
+                              <a href="#">New Arrival</a>
+                          </li>
+                          <li>
+                              <a href="#">Size Guide</a>
+                          </li>
+                          <li>
+                              <a href="#">Latest News</a>
+                          </li>
+                          <li>
+                              <a href="#">Our Sitemap</a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="footer-4">
+                  <h5 class="widget-title">Social Links</h5>
+                  <div class="textwidget">
+                      <ul class="menu">
+                          <li>
+                              <a href="#">Facebook</a>
+                          </li>
+                          <li>
+                              <a href="#">Instagram</a>
+                          </li>
+                          <li>
+                              <a href="#">Whatsapp</a>
+                          </li>
+                          <li>
+                              <a href="#">LinkedIn</a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="footer-5">
+                  <h5 class="widget-title">About The Store</h5>
+                  <div class="textwidget">
+                      <p>Doaansh is an online fashion store. Buy clothes and other accessories here online for
+                          men and women. Choose from a wide range of original quirky designs. Free delivery,
+                          Easy Return, Shop Now !!</p>
+                      <div class="mobile">
+                          <i class="fas fa-mobile"></i>
+                          Phone &amp Whatsapp: (+91) 90000 00000<br>
+                      </div>
+                      <br>
+                  </div>
+              </div>
+          </div>
+          <div class="copyright-section">
+              <p>
+                  &copy;2023 <a href="">Doaansh</a>
+                  . All rights reserved | Powered by <a href="">ActConnect</a>
+              </p>
+          </div>
+          
+      </div>
+  </footer>
+  <script src="script.js"></script>
+  </body>
+</html>

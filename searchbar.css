@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+:root {
+    --primary: #e37676;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Poppins", sans-serif;
+}
+
+/* input style */
+.input_container{
+    position: absolute  ;
+    display: flex;
+    justify-content: center;
+    right: 20%;
+    top: 22%;
+    transition: 0.2s ease-in-out;
+    display: none;
+}
+
+.open{
+    display: inline-flex;
+}
+
+.input_container input{
+    /* width: 100%; */
+    padding-left: 40px;
+    height: 35px;
+    border: 0.1px solid black;
+    border-radius: 30px;
+}
+
+.input_container input::placeholder{
+    color: black;
+}
+
+.search_icon{
+    position: relative;
+    left: 30px;
+    /* margin-left: -20px; */
+    display: grid;
+    place-items: center;
+}
+
+@media screen and (max-width: 1024px) {
+    .input_container{
+        right: 22%;
+    }
+}
+
+
+@media screen and (max-width: 834px) {
+    .input_container{
+        right: 29%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .input_container{
+        right: 0;
+        top: 73%;
+        left: 0;
+    }
+
+    .input_container input{
+        /* width: 180px; */
+        height: 24px;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .search_icon{
+        font-size: 0.8rem;
+    }
+
+    .input_container{
+        top: 72%;
+    }
+
+    .input_container input{
+        height: 25px;
+    }
+}

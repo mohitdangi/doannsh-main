@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.icon{
+    transform: rotate(90deg);
+    margin-left: 5px;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul , li{
+    list-style: none;
+}
+
+.nav-ul{
+    /* background-color: whitesmoke; */
+    background-color: #87CBB9;
+    /* background-color: #C4FCEF; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-container ul li{
+    position: relative;
+}
+
+.nav-container ul li a{
+    display: block;
+    padding: 10px 25px;
+    color: #000;
+    text-align: center;
+    font-size: 17px;
+}
+
+.nav-container ul li ul.dropdown li{
+    display: block;
+}
+
+.nav-container ul li ul.dropdown{
+    width: 100%;
+    background: #87CBB9;
+    position: absolute;
+    z-index: 200;
+    display: none;
+}
+
+.nav-container ul li a:hover{
+    background-color: white;
+}
+
+.nav-container ul li:hover ul.dropdown{
+    display: block;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    .nav-container ul li a{
+        font-size: 15px;
+        padding: 15px 8px;
+    }
+}
+
+@media screen and (max-width: 834px) {
+    .nav-ul{
+        /* background-color: whitesmoke; */
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .nav-container ul li a{
+        padding: 5px 0px;
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .nav-ul{
+        flex-direction: column;
+        gap: 0;
+        justify-content: normal;
+        align-items: normal;
+        /* background-color: #87CBB9; */
+        background-color: whitesmoke;
+    }
+
+    .nav-container ul li ul.dropdown{
+        background: whitesmoke;
+    }
+
+    .nav-container{
+        position: absolute;
+        left: -100%;
+        /* left: 0; */
+        height: auto;
+        width: 100%;
+        background-color: whitesmoke;
+        border-radius: 0 0 20px 20px;
+    }
+
+    .menu-bar-active{
+        left: 0;
+    }
+
+    .nav-container ul li a{
+        padding: 10px 10px;
+        font-size: 15px;
+    }
+
+    .nav-container ul li a:hover{
+        background-color: whitesmoke;
+    }
+
+}

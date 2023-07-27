@@ -1,0 +1,54 @@
+/* Add the necessary CSS styles for the dropdown */
+#buttons {
+    position: relative;
+    display: inline-block;
+  }
+  
+  #dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  #dropdown-content button {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+    box-sizing: border-box;
+    border: none; /* Remove the border from buttons */
+    border-bottom: 1px solid #dddddd; /* Add bottom border for all buttons */
+    transition: border-color 0.2s; /* Add transition for the border color change */
+  }
+  
+  /* Style the "All" button */
+  #buttons .button-value {
+    background-color: #87CBB9; /* Give the button a background color */
+    color: white; /* Set the text color to white */
+    position: relative; /* To position the arrow */
+  }
+  
+  .arrow-down {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%); /* Center the arrow vertically */
+  }
+  
+  #dropdown-content button:hover {
+    background-color: #f1f1f1;
+    border-color: #87CBB9; /* Change border color on hover */
+  }
+  
+  /* Remove all borders for the first button (All) */
+  #buttons .button-value {
+    border: none;
+  }
+  

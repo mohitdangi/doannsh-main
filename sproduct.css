@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+#prodetails {
+    display: flex;
+    margin-top: 20px;
+    padding: 40px 80px;
+    /* gap: 20px; */
+    /* background-color: rebeccapurple; */
+}
+
+#prodetails .single-pro-image {
+    width: 35%;
+    margin-right: 50px;
+}
+
+.small-img-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-img-col {
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+.single-pro-details h4 {
+    font-size: 28px;
+}
+
+#prodetails .single-pro-details {
+    width: 50%;
+    /* padding-top: 30px; */
+    background-color: whitesmoke;
+    padding: 10px;
+}
+
+#prodetails .single-pro-details h4 {
+    padding: 40px 0 20px 0;
+}
+
+#prodetails .single-pro-details h2 {
+    font-size: 26px;
+}
+
+#prodetails .single-pro-details select {
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+#prodetails .single-pro-details option:hover {
+    background-color: #088179c2;
+    color: white;
+}
+
+#prodetails .single-pro-details input {
+    width: 50px;
+    height: 47px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+    /* margin-left: 20px; */
+}
+
+#prodetails .single-pro-details input:focus {
+    outline: none;
+}
+
+#prodetails .single-pro-details span {
+    line-height: 25px;
+    font-size: 17px;
+}
+
+.normal {
+    /* width: 50px; */
+    height: 47px;
+    padding: 0 20px;
+    background-color: #088178;
+    color: #fff;
+    border: none;
+    /* font-weight: bold; */
+    font-size: 17px;
+    border-radius: 5px;
+    transition: 0.2s ease-in-out;
+}
+
+.normal a{
+    color: white;
+}
+
+
+
+.normal:hover {
+    background-color: #fff;
+    color: #088178;
+    border: 0.1px solid #088178;
+}
+
+.normal:hover a{
+    color: #088178;
+}
+
+@media screen and (max-width:834px) {
+    #prodetails{
+        /* background-color: rebeccapurple; */
+        padding: 1rem;
+    }
+
+    #prodetails .single-pro-details {
+        width: 50%;
+        /* padding-top: 30px; */
+        background-color: whitesmoke;
+        padding: 0px;
+    }
+    
+    #prodetails .single-pro-details h4 {
+        padding: 0px 0 20px 0;
+    }
+    
+    #prodetails .single-pro-details h2 {
+        font-size: 26px;
+    }
+    
+    #prodetails .single-pro-details select {
+        display: block;
+        padding: 10px 13px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        font-size: 16px;
+    }
+    
+
+}
+
+@media screen and (max-width: 786px) {
+    #prodetails {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        /* background-color: rebeccapurple; */
+    }
+
+    #prodetails .single-pro-details {
+        width: 100%;
+        margin-right: 0;
+        padding: 2rem 4rem;
+    }
+
+    
+
+}
+
+@media screen and (max-width:425px) {
+    #prodetails {
+        padding: 20px;
+    }
+
+    .single-pro-details{
+        background-color: red;
+    }
+
+    #prodetails .single-pro-details h4 {
+        padding: 10px 0 14px 0;
+        font-size: 1.5rem;
+    }
+
+    #prodetails .single-pro-details h2 {
+        font-size: 1rem;
+    }
+
+
+    .product-container2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: red;
+    }
+    
+    .pro{
+        animation: none;
+    }
+
+    /* hdkadf */
+    #prodetails .single-pro-details select {
+        padding: 4px 8px;
+        font-size: 14px;
+    }
+    
+    #prodetails .single-pro-details option:hover {
+        background-color: #088179c2;
+        color: white;
+    }
+    
+    #prodetails .single-pro-details input {
+        width: 40px;
+        height: 40px;
+        padding-left: 10px;
+        font-size: 14px;
+        margin-right: 10px;
+        /* margin-left: 20px; */
+    }
+    
+    #prodetails .single-pro-details input:focus {
+        outline: none;
+    }
+    
+    #prodetails .single-pro-details span {
+        line-height: 25px;
+        font-size: 14px;
+    }
+    
+    .normal {
+        /* width: 50px; */
+        /* height: 47px; */
+        height: 40px;
+        padding: 0 20px;
+        background-color: #088178;
+        color: #fff;
+        border: none;
+        font-weight: bold;
+        font-size: 14px;
+        border-radius: 5px;
+        transition: 0.2s ease-in-out;
+    }
+    
+    
+    
+    .normal:hover {
+        background-color: #fff;
+        color: #088178;
+        border: 0.1px solid #088178;
+    }
+    
+    .normal:hover a{
+        color: #088178;
+    }
+    
+}
+
+@media screen and (max-width:353px) {
+
+
+    .normal {
+        margin-top: 10px;
+    }
+}

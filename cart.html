@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doaansh | Cart Items</title>
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="test.css">
+
+    <link rel="stylesheet" href="cartcss.css">
+    <link rel="stylesheet" href="searchbar.css">
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="footer.css">
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="top">
+        <a href="#top" class="back">
+            <img src="./icon/arrow.png" alt="" width="10px">
+        </a>
+    </div>
+
+    <nav class="navbar1">
+        <div class="navbar_container1">
+            <div class="hamburger" id="nav-toggle">
+                <a href="">
+                    <img src="./icon/bars-solid.svg" alt="" width="20px" height="20px">
+                </a>
+            </div>
+            <div class="nav-2">
+                <img src="./assets/doansh png.png" alt="">
+            </div>
+            <div class="nav-3">
+                <div class="search">
+                    <a href="" id="searchBtn"><i class="fas fa-search"></i></a>
+                    <div class="input_container">
+                        <div class="search_icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <input type="text" id="searchInput" placeholder="Search Products....">
+                    </div>
+                </div>
+
+
+                <div>
+                    <a href=""><i class="fas fa-heart"></i></a>
+                </div>
+
+
+                <div>
+                    <a href=""><i class="fas fa-user"></i></a>
+                </div>
+
+
+                <div>
+                    <a href=""><i class="fas fa-shopping-cart"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="nav-container">
+            <ul class="nav-ul">
+                <li><a onclick="window.location.href='index.html';">Home</a></li>
+                <li>
+                    <a href="">Category<img src="./icon/arrow.png" alt="" width="6px" class="icon"></a>
+                    <ul class="dropdown">
+                        <li><a href="">T-shirt</a></li>
+                        <li><a href="" style="font-size: 16px;">Mobile Cover</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Top</a></li>
+                <li><a href="">Dresses</a></li>
+                <li>
+                    <a onclick="window.location.href='productPage.html';">Product</a>
+                    <!-- <img src="./icon/arrow.png" alt="" width="6px" class="icon"> -->
+                    <!-- <ul class="dropdown">
+                        <li><a href="">HTML</a></li>
+                        <li><a href="">css</a></li>
+                        <li><a href="">JS</a></li>
+                    </ul> -->
+                </li>
+                <li><a href="">Collections</a></li>
+                <li><a href="">Sale</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a onclick="window.location.href='contactUs.html';">Contact Us</a></li>
+                <li><a href="">Services</a></li>
+            </ul>
+        </div>
+
+    </nav>
+
+    <div class="container">
+        <div class="container1">
+            <h2>Summary Order</h2>
+            <p>Lorem ipsum dolor sit amet consectetur Lorem, ipsum dolor. <br> adipisicing elit. Atque, quidem!</p>
+            <div class="card_div">
+                <div class="card">
+                    <div>
+                        <img src="./assets/f1.jpg" alt="" width="100px" height="100px">
+                    </div>
+                    <div class="desc">
+                        <div class="p">
+                            <p>Lorem ipsum Lorem ipsum <br> dolor.</p>
+                            <!-- <span>M</span> -->
+                        </div>
+                        <div>
+                            <p>₹200 <span><sup class="sub">₹399</sup></span> </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <img src="./assets/f4.jpg" alt="" width="100px" height="100px">
+                    </div>
+                    <div class="desc">
+                        <div class="p">
+                            <p>Lorem ipsum Lorem ipsum <br> dolor.</p>
+                            <!-- <span>S </span> -->
+                        </div>
+                        <div>
+                            <p>₹200 <span><sup class="sub">₹399</sup></span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <img src="./assets/f3.jpg" alt="" width="100px" height="100px">
+                    </div>
+                    <div class="desc">
+                        <div class="p">
+                            <p>Lorem ipsum Lorem ipsum <br> dolor.</p>
+                            <!-- <span>XLL</span> -->
+                        </div>
+                        <div>
+                            <p>₹200 <span><sup class="sub">₹399</sup></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="shipping">
+                <h3>Available Shipping Method</h3>
+                <div class="company">
+                    <div class="company-logo">
+                        <img src="./icon/Fedex-logo.png" alt="" width="50px">
+                    </div>
+                    <div>
+                        <p>Fedex Delivery</p>
+                        <span>Delivery: 2-3 days work</span>
+                    </div>
+                    <div class="company-input">
+                        <label for="">Free</label>
+                        <input type="radio" name="" id="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- =========== right container =========== -->
+        <div class="container2">
+            <h2>Payment Details</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione, voluptas!</p>
+
+            <div class="container3">
+                <div class="form">
+                    <div class="card2 space icon-relative">
+                        <label class="label">Email Address</label>
+                        <input type="text" class="input" placeholder="xyz@gmail.com">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="card2 space icon-relative">
+                        <label class="label">Card number:</label>
+                        <input type="text" class="input" data-mask="0000 0000 0000 0000" placeholder="Card Number">
+                        <i class="far fa-credit-card"></i>
+                    </div>
+                    <div class="card-grp space">
+                        <div class="card-item icon-relative">
+                            <label class="label">Expiry date:</label>
+                            <input type="text" name="expiry-data" class="input" data-mask="00 / 00"
+                                placeholder="MM / YY">
+                            <i class="far fa-calendar-alt"></i>
+                        </div>
+                        <div class="card-item icon-relative">
+                            <label class="label">CVC:</label>
+                            <input type="text" class="input" data-mask="000" placeholder="000">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                    </div>
+                    <div class="card2 space icon-relative">
+                        <label class="label">Card Holder</label>
+                        <input type="text" class="input" placeholder="Daniel Ross">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="card2 space icon-relative">
+                        <label class="label">Billing Address</label>
+                        <input type="text" class="input" placeholder="Bhopal">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+
+                    <div class="small-section">
+                        <div>
+                            Subtotal
+                        </div>
+                        <div>
+                            ₹ 400
+                        </div>
+                    </div>
+
+                    <div class="small-section vat-div">
+                        <div>Vat(20%)</div>
+                        <div>₹ 10</div>
+                    </div>
+
+                    <div class="small-section">
+                        <div class="total">Total</div>
+                        <div class="total">₹ 410</div>
+                    </div>
+
+                    <div class="btn">
+                        Pay ₹410
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-up-section">
+                <div class="footer-img-div">
+                    <img src="./assets/doansh png.png" alt="">
+                </div>
+                <div>
+                    <ul class="footer-icons">
+                        <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                        <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                        <li><a href=""><i class="fab fa-whatsapp"></i></a></li>
+                        <li><a href=""><i class="fab fa-pinterest"></i></a></li>
+                        <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-down-section">
+                <div class="footer-1">
+                    <h5 class="widget-title">Company</h5>
+                    <div class="textwidget">
+                        <ul class="menu">
+                            <li>
+                                <a href="">Who we are</a>
+                            </li>
+                            <li>
+                                <a href="#">Privacy Policy </a>
+                            </li>
+                            <li>
+                                <a href="#">Terms &amp;Conditions</a>
+                            </li>
+                            <li>
+                                <a href="#">FAQ</a>
+                            </li>
+                    </div>
+                </div>
+                <div class="footer-2">
+                    <h5 class="widget-title">Service</h5>
+                    <div class="textwidget">
+                        <ul class="menu">
+                            <li>
+                                <a href="#">Contact Us</a>
+                            </li>
+                            <li>
+                                <a href="#">Track Order</a>
+                            </li>
+                            <li>
+                                <a href="#">Return Policy</a>
+                            </li>
+                            <li>
+                                <a href="#">Exchange Policy</a>
+                            </li>
+                            <li>
+                                <a href="#"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-3">
+                    <h5 class="widget-title">Links</h5>
+                    <div class="textwidget">
+                        <ul class="menu">
+                            <li>
+                                <a href="#">New Arrival</a>
+                            </li>
+                            <li>
+                                <a href="#">Size Guide</a>
+                            </li>
+                            <li>
+                                <a href="#">Latest News</a>
+                            </li>
+                            <li>
+                                <a href="#">Our Sitemap</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-4">
+                    <h5 class="widget-title">Social Links</h5>
+                    <div class="textwidget">
+                        <ul class="menu">
+                            <li>
+                                <a href="#">Facebook</a>
+                            </li>
+                            <li>
+                                <a href="#">Instagram</a>
+                            </li>
+                            <li>
+                                <a href="#">Whatsapp</a>
+                            </li>
+                            <li>
+                                <a href="#">LinkedIn</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-5">
+                    <h5 class="widget-title">About The Store</h5>
+                    <div class="textwidget">
+                        <p>Doaansh is an online fashion store. Buy clothes and other accessories here online for
+                            men and women. Choose from a wide range of original quirky designs. Free delivery,
+                            Easy Return, Shop Now !!</p>
+                        <div class="mobile">
+                            <i class="fas fa-mobile"></i>
+                            Phone &amp Whatsapp: (+91) 90000 00000<br>
+                        </div>
+                        <br>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright-section">
+                <p>
+                    &copy;2023 <a href="">Doaansh</a>
+                    . All rights reserved | Powered by <a href="">ActConnect</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
